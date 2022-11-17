@@ -82,8 +82,8 @@
     width: 100%;
   }
   .section-work-content-left img {
-    width: 575px;
-    height: 223px;
+    width: 80%;
+    height: auto;
   }
 
   .section-work-content-right {

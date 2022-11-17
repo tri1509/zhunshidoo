@@ -2,10 +2,9 @@
   position: relative;
   width: 100%;
   padding: 50px 0px;
-  perspective: 350px;
 }
 .slick-initialized .slick-slide {
-  margin: 20px;
+  margin: 0 20px;
 }
 
 .slick-slide img {
