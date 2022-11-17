@@ -1,0 +1,22 @@
+footer {
+  background-color: #171920;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 100px 0px 100px 0px;
+}
+
+.footer-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.footer-container p {
+  margin: 15px 0;
+}
+
+@media (max-width: 991px) {
+  .footer-container {
+    text-align: center;
+  }
+}
