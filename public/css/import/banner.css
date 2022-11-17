@@ -168,6 +168,16 @@
   width: 100%;
 }
 
+@media (max-width: 1200px) {
+  .section-banner-container {
+    margin-bottom: 100px;
+  }
+  .section-banner-inner {
+    padding: 0px 50px;
+    width: 100%;
+  }
+}
+
 @media (max-width: 991px) {
   .section-banner {
     padding: 50px 0px 0px 0px;
@@ -195,8 +205,9 @@
     font-size: 18px;
     text-align: center;
   }
+
   .section-banner-inner {
-    padding: 200px 20px;
+    padding: 100px 20px;
     width: 100%;
   }
   .section-banner-item {

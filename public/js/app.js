@@ -1,10 +1,13 @@
 let nav = document.getElementById("nav");
+let nav_mobile = document.getElementById("nav_mobile");
 let items = document.querySelectorAll(".item");
 document.addEventListener("scroll", (event) => {
   if (window.scrollY > 70) {
     nav.classList.add("tofixed");
+    nav_mobile.classList.add("tofixed");
   } else {
     nav.classList.remove("tofixed");
+    nav_mobile.classList.remove("tofixed");
   }
   items.forEach((item) => {
     if (item.offsetTop - window.scrollY < 550) {
@@ -37,52 +40,64 @@ $(document).ready(function () {
   $(".top-bar-menu").click(function () {
     $("#mySidenav").slideToggle(300);
   });
-  $(".center").on("init", function () {
+
+  $(".image-slider").on("init", function () {
     $(".slick-active").prev().removeClass("nextdiv").addClass("prevdiv");
-    $(".slick-active").next().removeClass("prevdiv").addClass("nextdiv");
+    $(".slick-active").next().next().removeClass("prevdiv").addClass("nextdiv");
   });
-  $(".center").on("afterChange", function () {
-    console.log($(".slick-active"));
-    $(".slick-active").prev().removeClass("nextdiv").addClass("prevdiv");
-    $(".slick-active").next().removeClass("prevdiv").addClass("nextdiv");
-  });
-  $(".image-slider").slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    infinite: true,
-    prevArrow: "<button type='button' class='slick-prev pull-left'>❮</button>",
-    nextArrow: "<button type='button' class='slick-next pull-right'>❯</button>",
-    autoplay: true,
-    autoplaySpeed: 9000,
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
+  $(".image-slider")
+    .slick({
+      centerMode: true,
+      focusOnSelect: true,
+      slidesToShow: 1,
+      arrows: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      infinite: true,
+      prevArrow:
+        "<button type='button' class='slick-prev pull-left'>❮</button>",
+      nextArrow:
+        "<button type='button' class='slick-next pull-right'>❯</button>",
+      autoplay: true,
+      autoplaySpeed: 9000,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          },
         },
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          },
         },
-      },
-      {
-        breakpoint: 766,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+        {
+          breakpoint: 766,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
         },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
         },
-      },
-    ],
-  });
+      ],
+    })
+    .on("afterChange", function () {
+      console.log($(".slick-active"));
+      $(".slick-active").prev().removeClass("nextdiv").addClass("prevdiv");
+      $(".slick-active")
+        .next()
+        .next()
+        .removeClass("prevdiv")
+        .addClass("nextdiv");
+    });
 });

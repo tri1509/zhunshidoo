@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="icon"
+      href="https://d3w53xvopplkco.cloudfront.net/wp-content/uploads/2021/06/crown.svg"
+      sizes="192x192"
+    />
+    <link
       href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"
       rel="stylesheet"
     />
@@ -23,7 +28,7 @@
     />
     <link rel="stylesheet" href="public/reset.css" />
     <link rel="stylesheet" href="public/style.css" />
-    <title>Document</title>
+    <title>Poker King</title>
   </head>
   <body>
     <header id="nav" class="hide991">
@@ -81,7 +86,7 @@
     </header>
 
     <!-- header mobile -->
-    <header class="show991">
+    <header class="show991" id="nav_mobile">
       <div class="header-mobile">
         <div class="top-bar">
           <div class="top-bar-menu" onclick="myFunction(this)">
@@ -190,7 +195,7 @@
       </div>
       <div class="section-banner-inner">
         <div class="row">
-          <div class="col-xl-4 col-sm-12">
+          <div class="col-lg-4 col-sm-12">
             <div class="section-banner-item">
               <div class="row">
                 <div class="col-2 text-center">
@@ -208,7 +213,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-4 col-sm-12">
+          <div class="col-lg-4 col-sm-12">
             <div class="section-banner-item">
               <div class="row">
                 <div class="col-2 text-center">
@@ -226,7 +231,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-4 col-sm-12">
+          <div class="col-lg-4 col-sm-12">
             <div class="section-banner-item">
               <div class="row">
                 <div class="col-2 text-center">
@@ -397,30 +402,42 @@
         </div>
       </div>
       <div class="image-slider">
-        <div class="images-item center">
+        <div class="images-item">
           <div class="image">
-            <a href="img/video1.mp4" data-fancybox="gallery">
+            <a
+              href="https://www.youtube.com/embed/_uXIbfZ8Pfo"
+              data-fancybox="gallery"
+            >
               <img src="img/slider-1.jpeg" alt="" />
             </a>
           </div>
         </div>
         <div class="images-item">
           <div class="image">
-            <a href="img/video2.mp4" data-fancybox="gallery">
+            <a
+              href="https://www.youtube.com/embed/DacqZQC3Hfc"
+              data-fancybox="gallery"
+            >
               <img src="img/slider-2.jpeg" alt="" />
             </a>
           </div>
         </div>
         <div class="images-item">
           <div class="image">
-            <a href="img/video3.mp4" data-fancybox="gallery">
+            <a
+              href="https://www.youtube.com/embed/b_tbQUo7d3I"
+              data-fancybox="gallery"
+            >
               <img src="img/slider-3.jpeg" alt="" />
             </a>
           </div>
         </div>
         <div class="images-item">
           <div class="image">
-            <a href="img/video4.mp4" data-fancybox="gallery">
+            <a
+              href="https://www.youtube.com/embed/L0a7FE2gycg"
+              data-fancybox="gallery"
+            >
               <img src="img/slider-4.jpeg" alt="" />
             </a>
           </div>
@@ -505,6 +522,9 @@
         </div>
       </div>
     </footer>
+    <div id="footer-sticky-buttons-tablet" class="show991 text-center">
+      <button class="btn btn-danger btn-buttons-tablet">Download</button>
+    </div>
   </body>
   <div id="overlayer"></div>
   <div class="loader">
