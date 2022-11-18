@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://d3w53xvopplkco.cloudfront.net/wp-content/uploads/2021/06/crown.svg"
+      sizes="192x192"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <link rel="stylesheet" href="public/reset.css" />
+    <link rel="stylesheet" href="public/style.css" />
+    <title>Tin tức - Poker King</title>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <header id="nav" class="hide991">
+        <div class="wide">
+          <div class="nav">
+            <div class="nav-logo">
+              <a href="./" title="img"
+                ><img src="img/pk9-new-logo.svg" alt=""
+              /></a>
+            </div>
+            <div class="nav-menu">
+              <ul class="nav-menu-list">
+                <li class="nav-menu-item"><a href="./">Nhà</a></li>
+                <li class="nav-menu-item">
+                  <a href="download.html">Tải game</a>
+                </li>
+                <li class="nav-menu-item">
+                  <a href="news.html" class="active">Tin tức</a>
+                </li>
+                <li class="nav-menu-item"><a href="">Hướng dẫn</a></li>
+                <li class="nav-menu-item">
+                  <a href="about.html">Giới thiệu</a>
+                </li>
+                <li class="nav-menu-item"><a href="support.html">Ủng hộ</a></li>
+              </ul>
+            </div>
+            <div class="nav-elementor">
+              <img src="img/glc-badge.svg" alt="" width="86" height="34" />
+            </div>
+            <div class="nav-elementor-widget">
+              <div class="nav-elementor-widget-box">
+                <a title="img" href="./">
+                  <img
+                    src="img/vi.png"
+                    alt=""
+                    class="nav-elementor-widget-box-img"
+                  />
+                </a>
+                <span class="nav-elementor-widget-box-span">Tiếng Việt</span>
+                <div class="nav-elementor-widget-box-dropdown">
+                  <a href="./">
+                    <img class="box-dropdown-img" src="img/en.png" alt="" />
+                    <span class="box-dropdown-span"> English </span>
+                  </a>
+                  <a href="./">
+                    <img class="box-dropdown-img" src="img/zh.png" alt="" />
+                    <span class="box-dropdown-span"> 简体中文 </span>
+                  </a>
+                  <a href="./">
+                    <img class="box-dropdown-img" src="img/hi.png" alt="" />
+                    <span class="box-dropdown-span"> हिन्दी </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="nav-elementor-wrap">
+              <a href="./">Chơi ngay</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- header mobile -->
+      <header class="show991" id="nav_mobile">
+        <div class="header-mobile">
+          <div class="top-bar">
+            <div class="top-bar-menu" onclick="myFunction(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+            <img src="img/pk9-new-logo.svg" alt="" />
+          </div>
+          <div class="top-right">
+            <img src="img/glc-badge.svg" alt="" width="86" height="34" />
+            <div class="top-right-langue position-relative">
+              <img src="img/vi.png" alt="" class="top-right-langue-selected" />
+              <div class="top-right-langue-select">
+                <img class="box-dropdown-img" src="img/en.png" alt="" />
+                <img class="box-dropdown-img" src="img/zh.png" alt="" />
+                <img class="box-dropdown-img" src="img/hi.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mySidenav" id="mySidenav">
+          <ul class="mySidenav-list">
+            <li class="mySidenav-item">
+              <a href="" class="mySidenav-link active">Nhà</a>
+            </li>
+            <li class="mySidenav-item">
+              <a href="" class="mySidenav-link">Nhà</a>
+            </li>
+            <li class="mySidenav-item">
+              <a href="" class="mySidenav-link">Tải game</a>
+            </li>
+            <li class="mySidenav-item">
+              <a href="" class="mySidenav-link">Tin tức</a>
+            </li>
+            <li class="mySidenav-item">
+              <a href="" class="mySidenav-link">Hướng dẫn</a>
+            </li>
+            <li class="mySidenav-item">
+              <a href="" class="mySidenav-link">Giới thiệu</a>
+            </li>
+            <li class="mySidenav-item">
+              <a href="" class="mySidenav-link">Ủng hộ</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <!-- / header mobile -->
+
+      <section class="section-block section-block-news">
+        <div class="section-block-container news-nav">
+          <div class="news-content">
+            <div class="post-nav-image">
+              <a href=""><img src="img/imgnews.png" alt="" /></a>
+            </div>
+            <div class="news-grid-content">
+              <h2>
+                <a href=""
+                  >Poker King hân hoan chào đón bốn vị mỹ nữ AV cùng hóa thân
+                  thành những Dealers gợi cảm tương tác Live trực tuyến</a
+                >
+              </h2>
+              <ul>
+                <li>
+                  <span>"by"<a href="">PokerKing</a></span>
+                </li>
+                <li>
+                  <p>
+                    Nhằm đáp lại sự ủng hộ của quý khách hàng , Poker King bằng
+                    mọi giá đã mời về bốn mỹ nữ AV nổi tiếng Yua Mikami ,Kirara
+                    Asuka , Ai Uehara , Shouko Takahashi cùng tề tựu trong Video
+                    Tables hóa thân thành những…<a href="" class="read"
+                      >Read More »</a
+                    >
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="news-post-main">
+            <div class="post-nav-main-image">
+              <a href=""><img src="img/imgnews2.png" alt="" /></a>
+            </div>
+
+            <div class="news-grid-content">
+              <h2>
+                <a href=""
+                  >POKER KING TRỞ THÀNH NHÀ TÀI TRỢ CHÍNH THỨC CỦA TRITON</a
+                >
+              </h2>
+              <ul>
+                <li>
+                  <span>"by"<a href="">PokerKing</a></span>
+                </li>
+                <li>
+                  <p>
+                    21 มกราคม 2020 –
+                    โป๊กเกอร์คิงประกาศในวันนี้ว่าพวกเขาจะสปอนเซอร์การแข่งขัน
+                    Triton Poker Super High Roller Series ในปี 2020
+                    โดยโป๊กเกอร์คิงและ Triton Poker จะจัดกิจกรรมจำนวน 4
+                    รายการใหญ่
+                    ในสถานที่อันน่าตื่นตาตื่นใจและนำการแข่งขันระดับโลก
+                    รวมถึงเงินเดิมพันที่มากที่สุด
+                    กิจกรรมแรกนี้จะจัดขึ้นที่ประเทศเกาหลีใต้
+                    กาะเชจูที่มีมนต์ขลังเป็นฉากหลัง และมีกิจกรรมอื่น ๆ
+                    เกิดขึ้นใน เมืองBudva, ประเทศมอนเตเนโกรและเมืองลอนดอน
+                    ประเทศอังกฤษ
+                    สำหรับเวลาและสถานที่ของกิจกรรมสามารถเข้าไปดูที่เว็บไซต์โป๊กเกอร์คิง
+                    การแข่งขัน Triton Poker Series
+                    นี้สร้างแรงบันดาลใจให้กับคนที่รักโป๊กเกอร์และต้องการเป็นผู้ชนะ
+                    โดย Triton มีข้อมูลเกี่ยวกับโป๊กเกอร์ที่มีคุณภาพ,
+                    นวัตกรรมและตารางที่เต็มไปด้วยผู้เล่นโป๊กเกอร์ระดับโลก,
+                    ผู้ประกอบการและธุรกิจยักษ์ใหญ่ นอกจากนี้
+                    กำไรที่ได้จะถูกนำไปบริจาคให้กับองค์กรการกุศลระดับรากหญ้าทั่วโลก
+                    โป๊กเกอร์คิงก่อตั้งขึ้นโดยกลุ่มเกมชั้นนำของโลก: Sun City……
+                    <a href="" class="read">Read More » </a>
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="news-post-footer">
+            <div class="post-nav-image">
+              <a href=""><img src="img/imgnews3.jpg" alt="" /></a>
+            </div>
+            <div class="news-grid-content">
+              <h2>
+                <a href=""
+                  >Tom Dwan Tham Gia PokerKing Với Vai Trò Đại Sứ Chính Thức</a
+                >
+              </h2>
+              <ul>
+                <li>
+                  <span>"by"<a href="">PokerKing</a></span>
+                </li>
+                <li>
+                  <p>
+                    Mới đây, Poker Circle đã tiết lộ một bất ngờ: huyền thoại xì
+                    tố Tom Dwan đã chính thức ký hợp đồng với nền tảng trực
+                    tuyến Poker King, để trở thành đại sứ, và gia nhập vào đội
+                    ngũ an ninh. Bổ sung cho…
+                    <a href="" class="read">Read More » </a>
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- mobi-news -->
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="row">
+            <div class="col-lg-3 col-sm-12">
+              <img src="img/pk9-new-logo.svg" alt="" />
+              <p>
+                Bản quyền © 2021 Vua Poker. <br />
+                Mọi quyền được bảo lưu
+              </p>
+            </div>
+            <div class="col-lg-3 col-sm-12">
+              <p>Vua bài xì phé</p>
+              <div class="footer-link">
+                <a href="">Tải game</a>
+                <a href="">Sự kiện even</a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-12">
+              <p>Hỗ trợ</p>
+              <div class="footer-link">
+                <a href="">Đào tạo</a>
+                <a href="">CSKH Trực Tuyến</a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-12">
+              <p>Giới thiệu về Vua Poker</p>
+              <div class="footer-link">
+                <a href="">About Us</a>
+                <a href="">Điều khoản sử dụng</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div id="footer-sticky-buttons-tablet" class="show991">
+        <button class="btn btn-danger btn-buttons-tablet">Download</button>
+      </div>
+    </div>
+  </body>
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+  <div title="Về đầu trang" id="top-up">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="40"
+      height="40"
+      fill="currentColor"
+      class="bi bi-arrow-up-circle-fill"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"
+      />
+    </svg>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+  ></script>
+  <script src="public/js/app.js"></script>
+</html>

@@ -59,6 +59,10 @@
   color: #ffffff;
 }
 
+.section-work-content-right-title span {
+  display: block;
+}
+
 .section-work-content-right-content {
   color: #84848a;
   font-family: "SF Pro Regular", Sans-serif;

@@ -5,6 +5,9 @@
 @import "../public/css/import/block.css";
 @import "../public/css/import/contact.css";
 @import "../public/css/import/slider.css";
+@import "../public/css/import/download.css";
+@import "../public/css/import/news.css";
+@import "../public/css/import/about.css";
 
 body {
   width: 100%;
@@ -12,6 +15,10 @@ body {
   line-height: 1.8;
   font-size: 15px;
   overflow-x: hidden;
+}
+
+#wrapper {
+  overflow: hidden;
 }
 
 .fullwidth {
