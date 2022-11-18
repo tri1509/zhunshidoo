@@ -81,7 +81,17 @@ https://d3w53xvopplkco.cloudfront.net/wp-content/uploads/2021/12/08081149/bg_Abo
   }
 }
 
+@media (max-width: 991px) {
+  .about-banner {
+    background-image: url(https://d3w53xvopplkco.cloudfront.net/wp-content/uploads/2021/12/08081146/bg_About-Us_768.jpg);
+  }
+}
+
 @media screen and (max-width: 767.98px) {
+  .about-banner {
+    background-image: url(https://d3w53xvopplkco.cloudfront.net/wp-content/uploads/2021/12/08081149/bg_About-Us_375.jpg);
+    height: 500px;
+  }
   .download-container {
     display: block;
   }
