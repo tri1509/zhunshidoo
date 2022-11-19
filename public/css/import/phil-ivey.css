@@ -1,0 +1,229 @@
+.phil-ivey {
+  display: flex;
+  border-bottom: 1px solid #84848a;
+}
+.phil-ivey-item-left {
+  width: 74%;
+  padding: 15px 50px 20px 0;
+}
+.phil-ivey-item-left .phil-title,
+.phil-right-share {
+  padding: 10px;
+}
+.phil-ivey-item-left .phil-title a {
+  color: #84848a;
+}
+.phil-content h1 {
+  color: #ffffff;
+  font-family: "Axiforma Medium", Sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  line-height: 44px;
+  font-weight: 600;
+  padding: 10px;
+}
+.phil-content h1 .title {
+  font-weight: 500;
+  padding: 10px;
+}
+.phil-video {
+  margin-top: 30px;
+  width: 100%;
+  overflow: hidden;
+}
+.phil-ivey-item-right {
+  width: 26%;
+  padding: 10px 0 10px 10px;
+}
+.phil-ivey-item-right h5 {
+  color: #84848a;
+  padding-bottom: 30px;
+  font-weight: 400;
+}
+.phil-right-date {
+  font-family: "SF Pro Regular", Sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.005em;
+  color: #84848a;
+  padding: 12px 0px;
+  display: block;
+}
+.phil-right-date::before {
+  content: "March 18, 2020";
+  padding: 10px;
+}
+li.phil-ivey-post {
+  padding: 30px 1px;
+  border-bottom: 1px solid #84848a;
+}
+li.phil-ivey-post a {
+  font-family: "Axiforma Medium", Sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 140%;
+  color: white;
+}
+li.phil-ivey-post a:hover {
+  color: #ffde96;
+}
+p.phil-right-share-title {
+  color: #84848a;
+  font-weight: 400;
+}
+.phil-right-share-icon {
+  padding: 10px;
+  border-bottom: 1px solid #84848a;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.phil-right-share-icon span {
+  background: #84848a;
+  padding: 1px 7px;
+  border-radius: 50%;
+}
+.phil-right-share-icon span a {
+  background: white;
+}
+.phil-ivey-directional {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.phil-ivey-pve {
+  width: calc(50% - (1px / 2));
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.phil-ivey-next {
+  width: calc(50% - (1px / 2));
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+.phil-ivey-next a {
+  text-align: end;
+  display: block;
+}
+.phil-ivey-pve {
+  display: flex;
+  padding: 40px;
+}
+.phil-pve-icon::before {
+  content: "<";
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  position: absolute;
+  top: 20%;
+  left: -1%;
+  font-size: 30px;
+  font-weight: 800;
+  color: #fff;
+}
+.phil-next-icon::before {
+  content: ">";
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  position: absolute;
+  top: 20%;
+  right: 1%;
+  font-size: 30px;
+  font-weight: 800;
+  color: #fff;
+}
+.phil-ivey-pve-title {
+  display: flex;
+  flex-direction: column;
+}
+.phil-ivey-pve-title h1 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #fff;
+}
+.phil-ivey-pve-title span {
+  font-size: 0.8rem;
+  color: #fff;
+}
+.phil-ivey-next {
+  padding: 40px;
+}
+.phil-input {
+  margin-top: 50px;
+  width: 100%;
+  border: 1px solid #adadad55;
+  border-radius: 10px;
+}
+.phil-container {
+  min-height: unset;
+}
+.phil-come-back {
+  margin: 10px 0px 10px 0px;
+}
+.phil-come-back span {
+  display: block;
+  text-align: center;
+  color: #ffde96;
+  padding: 10px 0;
+}
+.phil-come-back span::after {
+  content: ">>";
+  padding: 10px;
+}
+@media screen and (max-width: 767.98px) {
+  .section-block,
+  .phil-ivey {
+    display: block;
+  }
+  .phil-ivey-item-left {
+    padding: unset;
+    width: 100%;
+  }
+  .phil-content h1 {
+    text-align: start;
+    padding: unset;
+  }
+  .phil-content {
+    padding: 10px;
+  }
+  .phil-ivey-item-right {
+    width: 100%;
+  }
+  .phil-ivey-item-right {
+    padding: unset;
+  }
+  .phil-ivey-pve,
+  .phil-ivey-next {
+    padding: 15px;
+  }
+  .phil-next-icon::before {
+    top: 0;
+    font-size: 20px;
+  }
+  .phil-pve-icon::before {
+    left: -3%;
+    top: 0;
+    font-size: 20px;
+  }
+  .phil-ivey-pve-title h1 {
+    font-size: 0.9rem;
+  }
+  .phil-ivey-pve-title span {
+    font-size: 0.5rem;
+  }
+  .phil-input {
+    width: 90%;
+    margin: auto;
+  }
+}

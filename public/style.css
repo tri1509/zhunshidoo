@@ -8,6 +8,10 @@
 @import "../public/css/import/download.css";
 @import "../public/css/import/news.css";
 @import "../public/css/import/about.css";
+@import "../public/css/import/phil-ivey.css";
+@import "../public/css/import/security.css";
+@import "../public/css/import/traning.css";
+@import "../public/css/import/videos.css";
 
 body {
   width: 100%;
